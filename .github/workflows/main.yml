@@ -1,0 +1,41 @@
+name: CI
+
+on: 
+  schedule:
+  - cron: '0 1 * * *'
+  push:
+    branches:
+      - source
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.x'
+    
+    - name: set up git
+      run: |
+        git config --global user.username ShubhamZanwar
+        git config --global user.name ShubhamZanwar
+        git config --global user.email zanwar.shubham@gmail.com
+    - name: clone repo
+      run: |
+        git checkout source
+        yarn
+        node index.js ${{secrets.GH_TOKEN}} 41
+        yarn build
+        git clone https://github.com/shubhamzanwar/shubhamzanwar.github.io
+        rm -rf ./shubhamzanwar.github.io/*
+        mv -v ./dist/* ./shubhamzanwar.github.io
+        mv ./src/assets/resume.pdf ./shubhamzanwar.github.io/resume.pdf
+        mkdir ./shubhamzanwar.github.io/.github
+        mkdir ./shubhamzanwar.github.io/.github/workflows
+        mv ./.github/workflows/main.yml ./shubhamzanwar.github.io/.github/workflows/main.yml
+        cd shubhamzanwar.github.io
+        git add .
+        git commit --allow-empty -m "updating project from github"
+        git push https://shubhamzanwar:${{secrets.GH_TOKEN}}@github.com/shubhamzanwar/shubhamzanwar.github.io --all
