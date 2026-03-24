@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LGTM — AI Code Reviews, Automatically</title>
+<meta name="description" content="The ultra-fast Mac utility that watches your PRs and delivers deep architectural feedback using Claude Code.">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        background: "var(--bg)",
+        foreground: "var(--fg)",
+        primary: "var(--primary)",
+        "on-primary": "var(--on-primary)",
+        surface: "var(--surface)",
+        border: "var(--border)",
+        muted: "var(--muted)",
+      },
+      fontFamily: {
+        headline: ["Geist", "Inter", "sans-serif"],
+        body: ["Geist", "Inter", "sans-serif"],
+      },
+      borderRadius: { DEFAULT: "0.375rem", lg: "0.5rem", xl: "0.75rem", "2xl": "1rem", full: "9999px" },
+    },
+  },
+};
+</script>
+<script>
+  // Apply theme before paint
+  (function() {
+    var t = localStorage.getItem('lgtm-web-theme') || 'system';
+    var dark = t === 'dark' || (t === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+  })();
+</script>
+<style>
+  :root, [data-theme="dark"] {
+    --bg: #0f0e0d;
+    --fg: #ffffff;
+    --primary: #d8c3ad;
+    --on-primary: #4c3e2d;
+    --surface: #0f0e0d;
+    --border: #2a2a2a;
+    --muted: #888888;
+    --titlebar-bg: #121212;
+    --titlebar-text: rgba(255,255,255,0.3);
+    --window-bg: #1a1a1a;
+    --window-border: rgba(255,255,255,0.05);
+    --shadow: 0 40px 100px -20px rgba(0,0,0,0.8);
+    --glow-opacity: 0.05;
+  }
+  [data-theme="light"] {
+      --bg: oklch(0.9821 0 0);
+      --fg: oklch(0.2435 0 0);
+      --primary: oklch(0.4341 0.0392 41.9938);
+      --on-primary: oklch(0.9821 0 0);
+      --surface: oklch(0.95 0 0);
+      --border: oklch(0.85 0 0);
+      --muted: oklch(0.6 0 0);
+      --titlebar-bg: #2a2a2a;
+      --titlebar-text: rgba(255,255,255,0.4);
+      --window-bg: #1a1a1a;
+      --window-border: rgba(0,0,0,0.1);
+      --shadow: 0 50px 100px -20px rgba(0,0,0,0.15), 0 30px 60px -30px rgba(0,0,0,0.2);
+      --glow-opacity: 0.05;
+  }
+  body {
+    background-color: var(--bg);
+    color: var(--fg);
+    -webkit-font-smoothing: antialiased;
+  }
+  .mac-window { box-shadow: var(--shadow); }
+  .gold-glow { text-shadow: 0 0 20px rgba(212, 175, 55, 0.3); }
+  [data-theme="light"] .gold-glow { text-shadow: none; }
+  .screenshot-dark { display: block; }
+  .screenshot-light { display: none; }
+  [data-theme="light"] .screenshot-dark { display: none; }
+  [data-theme="light"] .screenshot-light { display: block; }
+  .theme-icon-light { display: none; }
+  .theme-icon-dark { display: inline; }
+  [data-theme="light"] .theme-icon-light { display: inline; }
+  [data-theme="light"] .theme-icon-dark { display: none; }
+</style>
+</head>
+<body class="font-body selection:bg-primary/30 selection:text-primary">
+
+<nav class="w-full max-w-5xl mx-auto px-6 py-8 flex justify-between items-center">
+  <div class="flex items-center gap-2">
+    <svg class="w-8 h-8" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="32" height="32" rx="4" fill="var(--fg)"/>
+      <g clip-path="url(#wc)">
+        <path d="M6.31137 5.77046C7.16005 4.92229 8.22555 4.32373 9.39142 4.0402C10.5573 3.75666 11.7787 3.79906 12.9221 4.16276C14.0655 4.52646 15.0869 5.19747 15.8747 6.10245C16.6625 7.00742 17.1864 8.11154 17.3891 9.29415C17.5919 10.4767 17.4656 11.6923 17.0242 12.808C16.5827 13.9237 15.8431 14.8966 14.8861 15.6203C13.9291 16.3441 12.7916 16.7908 11.5978 16.9118C10.4041 17.0327 9.20007 16.8232 8.11737 16.3061L-2.6939 27.1174C-2.02795 28.5112-1.87622 30.0956-2.26551 31.5905C-2.65481 33.0853-3.56007 34.3945-4.82128 35.2864C-6.08249 36.1784-7.61843 36.5957-9.1576 36.4647C-10.6968 36.3337-12.1401 35.6627-13.2324 34.5704C-14.3247 33.4781-14.9956 32.0348-15.1267 30.4957C-15.2577 28.9565-14.8403 27.4205-13.9484 26.1593C-13.0564 24.8981-11.7473 23.9929-10.2524 23.6036C-8.75752 23.2143-7.17314 23.366-5.77931 24.032L5.03196 13.2207C4.4485 11.999 4.25824 10.6265 4.48738 9.2922C4.71651 7.95789 5.35378 6.72748 6.31137 5.77046ZM18.3527 17.0836L28.2095 17.0836C28.3536 17.0834 28.4944 17.126 28.6142 17.206C28.734 17.2859 28.8273 17.3997 28.8824 17.5327C28.9375 17.6658 28.9518 17.8122 28.9236 17.9535C28.8953 18.0947 28.8258 18.2244 28.7238 18.326L25.3381 21.7117L27.395 23.7687C28.7588 25.1325 29.525 26.9823 29.525 28.911C29.525 30.8398 28.7588 32.6895 27.395 34.0534L15.8185 45.6298C16.4845 47.0236 16.6362 48.608 16.2469 50.1029C15.8576 51.5978 14.9524 52.9069 13.6912 53.7989C12.43 54.6908 10.894 55.1082 9.35484 54.9772C7.81566 54.8461 6.37236 54.1752 5.28006 53.0829C4.18776 51.9906 3.5168 50.5473 3.38578 49.0081C3.25476 47.4689 3.67211 45.933 4.56407 44.6718C5.45603 43.4106 6.76515 42.5053 8.26004 42.116C9.75492 41.7267 11.3393 41.8785 12.7331 42.5444L24.3096 30.968C24.8551 30.4224 25.1616 29.6825 25.1616 28.911C25.1616 28.1395 24.8551 27.3996 24.3096 26.8541L22.2526 24.7971L18.8669 28.1829C18.7653 28.2849 18.6356 28.3544 18.4944 28.3827C18.3532 28.4109 18.2067 28.3966 18.0736 28.3415C17.9406 28.2864 17.8268 28.1931 17.7469 28.0733C17.6669 27.9535 17.6244 27.8126 17.6245 27.6686L17.6245 17.8118C17.6244 17.7161 17.6432 17.6214 17.6797 17.533C17.7163 17.4446 17.7699 17.3643 17.8375 17.2966C17.9052 17.229 17.9855 17.1754 18.0739 17.1388C18.1623 17.1023 18.257 17.0835 18.3527 17.0836ZM12.4822 8.85587C12.073 8.44672 11.5181 8.21686 10.9395 8.21686C10.3609 8.21686 9.80593 8.44671 9.39678 8.85587C8.98763 9.26502 8.75777 9.81994 8.75777 10.3986C8.75777 10.9772 8.98763 11.5321 9.39678 11.9413C9.80593 12.3504 10.3609 12.5803 10.9395 12.5803C11.5181 12.5803 12.073 12.3504 12.4822 11.9413C12.8913 11.5321 13.1212 10.9772 13.1212 10.3986C13.1212 9.81994 12.8913 9.26502 12.4822 8.85587ZM-7.05873 28.3968C-7.46788 27.9876-8.0228 27.7578-8.60143 27.7578C-9.18006 27.7578-9.73498 27.9876-10.1441 28.3968C-10.5533 28.8059-10.7831 29.3609-10.7831 29.9395C-10.7831 30.5181-10.5533 31.073-10.1441 31.4822C-9.73498 31.8913-9.18005 32.1212-8.60143 32.1212C-8.0228 32.1212-7.46788 31.8913-7.05873 31.4822C-6.64958 31.073-6.41972 30.5181-6.41972 29.9395C-6.41972 29.3609-6.64958 28.8059-7.05873 28.3968ZM8.36831 46.9092C7.95916 47.3184 7.7293 47.8733 7.7293 48.4519C7.7293 49.0306 7.95916 49.5855 8.36831 49.9946C8.77746 50.4038 9.33239 50.6336 9.91102 50.6336C10.4896 50.6336 11.0446 50.4038 11.4537 49.9946C11.8629 49.5855 12.0927 49.0306 12.0927 48.4519C12.0927 47.8733 11.8629 47.3184 11.4537 46.9092C11.0446 46.5001 10.4896 46.2702 9.91102 46.2702C9.33239 46.2702 8.77746 46.5001 8.36831 46.9092Z" fill="var(--bg)"/>
+      </g>
+      <defs><clipPath id="wc"><rect width="32" height="32" rx="4" fill="white"/></clipPath></defs>
+    </svg>
+    <span class="text-xl font-bold tracking-tight text-foreground">LGTM</span>
+  </div>
+  <div class="flex items-center gap-8">
+    <button id="theme-toggle" onclick="toggleTheme()" class="w-8 h-8 flex items-center justify-center rounded-lg text-muted hover:text-foreground transition-colors" title="Toggle theme">
+      <span class="material-symbols-outlined text-xl theme-icon-dark">dark_mode</span>
+      <span class="material-symbols-outlined text-xl theme-icon-light">light_mode</span>
+    </button>
+    <a href="./releases/v0.1.0/LGTM_0.1.0_aarch64.dmg" class="bg-primary text-on-primary px-4 py-1.5 rounded-lg text-sm font-semibold hover:brightness-110 transition-all no-underline">Download</a>
+  </div>
+</nav>
+
+<main class="max-w-5xl mx-auto px-6 pb-32">
+
+  <!-- Hero -->
+  <section class="text-center pt-20 pb-16">
+    <h1 class="text-5xl md:text-7xl font-bold tracking-tight text-foreground mb-8 gold-glow">
+      AI code reviews,<br><span class="text-primary">automatically.</span>
+    </h1>
+    <p class="text-xl text-muted max-w-2xl mx-auto leading-relaxed mb-10 font-medium">
+      The ultra-fast Mac utility that watches your PRs and delivers deep architectural feedback before you even context switch.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-20">
+      <a href="./releases/v0.1.0/LGTM_0.1.0_aarch64.dmg" class="w-full sm:w-auto bg-primary text-on-primary px-8 py-3.5 rounded-xl font-bold hover:brightness-110 transition-all flex items-center justify-center gap-2 no-underline">
+        <span class="material-symbols-outlined text-xl">download</span>
+        Download for Mac
+      </a>
+    </div>
+
+    <!-- Screenshot -->
+    <div class="relative max-w-4xl mx-auto">
+      <img alt="LGTM App Interface (Dark)" class="screenshot-dark mac-window w-full h-auto rounded-2xl" src="screenshot.png" onerror="this.style.display='none'">
+      <img alt="LGTM App Interface (Light)" class="screenshot-light mac-window w-full h-auto rounded-2xl" src="screenshot-light.png" onerror="this.style.display='none'">
+      <div class="absolute -inset-10 blur-[120px] -z-10 rounded-full" style="background:var(--primary); opacity:var(--glow-opacity)"></div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-24 border-t mt-12" style="border-color:var(--border)">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
+      <div class="space-y-3">
+        <div class="text-primary"><span class="material-symbols-outlined text-3xl">automation</span></div>
+        <h3 class="text-lg font-bold text-foreground">Automatic reviews</h3>
+        <p class="text-muted leading-relaxed text-sm">Polls your repos every 30 seconds. New review request? Claude starts reviewing immediately.</p>
+      </div>
+      <div class="space-y-3">
+        <div class="text-primary"><span class="material-symbols-outlined text-3xl">chat</span></div>
+        <h3 class="text-lg font-bold text-foreground">Interactive chat</h3>
+        <p class="text-muted leading-relaxed text-sm">Ask follow-up questions about the review. Claude has the full codebase and PR context.</p>
+      </div>
+      <div class="space-y-3">
+        <div class="text-primary"><span class="material-symbols-outlined text-3xl">key</span></div>
+        <h3 class="text-lg font-bold text-foreground">Zero auth setup</h3>
+        <p class="text-muted leading-relaxed text-sm">Uses your existing <code class="bg-surface px-1.5 py-0.5 rounded text-xs">gh</code> and <code class="bg-surface px-1.5 py-0.5 rounded text-xs">claude</code> CLI auth. No API keys, no tokens.</p>
+      </div>
+      <div class="space-y-3">
+        <div class="text-primary"><span class="material-symbols-outlined text-3xl">account_tree</span></div>
+        <h3 class="text-lg font-bold text-foreground">Multi-repo</h3>
+        <p class="text-muted leading-relaxed text-sm">Monitor unlimited repositories simultaneously. PRs are grouped by repo in the sidebar.</p>
+      </div>
+      <div class="space-y-3">
+        <div class="text-primary"><span class="material-symbols-outlined text-3xl">terminal</span></div>
+        <h3 class="text-lg font-bold text-foreground">Portable sessions</h3>
+        <p class="text-muted leading-relaxed text-sm">Every review is a real Claude Code session. Continue it in your terminal with <code class="bg-surface px-1.5 py-0.5 rounded text-xs">claude --resume</code>.</p>
+      </div>
+      <div class="space-y-3">
+        <div class="text-primary"><span class="material-symbols-outlined text-3xl">checklist</span></div>
+        <h3 class="text-lg font-bold text-foreground">Structured findings</h3>
+        <p class="text-muted leading-relaxed text-sm">Issues are parsed into an interactive checklist with severity levels. Track what you've addressed.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Requirements -->
+  <section class="py-12 px-8 rounded-2xl" style="background:var(--surface); border:1px solid var(--border)">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+      <div>
+        <h2 class="text-sm font-bold uppercase tracking-widest text-muted mb-1">Requirements</h2>
+        <p class="text-foreground font-medium">Built natively for the modern Mac stack.</p>
+      </div>
+      <div class="flex flex-wrap gap-8 text-sm">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-xl">laptop_mac</span>
+          <span class="font-bold">macOS 11+</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-xl">terminal</span>
+          <span class="font-bold">gh CLI</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary text-xl">smart_toy</span>
+          <span class="font-bold">Claude CLI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-32 text-center">
+    <h2 class="text-4xl font-bold text-foreground mb-8 gold-glow">Ready to ship better code?</h2>
+    <a href="./releases/v0.1.0/LGTM_0.1.0_aarch64.dmg" class="inline-block bg-primary text-on-primary px-12 py-4 rounded-xl font-bold text-lg hover:brightness-110 transition-all no-underline">
+      Download for Mac
+    </a>
+    <p class="mt-6 text-[10px] font-bold text-muted uppercase tracking-[0.2em]">v0.1.0 · macOS · Apple Silicon</p>
+  </section>
+
+</main>
+
+<footer class="w-full max-w-5xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-6" style="border-top:1px solid var(--border)">
+  <div class="flex items-center gap-3">
+    <div class="text-sm text-muted">© 2026 LGTM.</div>
+  </div>
+</footer>
+
+<script>
+function toggleTheme() {
+  var current = document.documentElement.getAttribute('data-theme');
+  var next = current === 'dark' ? 'light' : 'dark';
+  document.documentElement.setAttribute('data-theme', next);
+  localStorage.setItem('lgtm-web-theme', next);
+}
+// Listen for system changes when no manual preference
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+  if (!localStorage.getItem('lgtm-web-theme') || localStorage.getItem('lgtm-web-theme') === 'system') {
+    document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+  }
+});
+</script>
+</body>
+</html>
