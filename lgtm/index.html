@@ -226,6 +226,14 @@ window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', fun
     document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
   }
 });
+
+// Track downloads
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('a[href*=".dmg"]');
+  if (link) {
+    fetch('https://api.counterapi.dev/v1/lgtm/downloads/up').catch(function(){});
+  }
+});
 </script>
 </body>
 </html>
