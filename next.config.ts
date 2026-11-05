@@ -1,8 +1,30 @@
 import type { NextConfig } from "next"
+import { PHASE_DEVELOPMENT_SERVER } from "next/constants"
 
-const nextConfig: NextConfig = {
-  output: "export",
-  images: { unoptimized: true },
+// Static landing pages bundled in public/<name>/index.html.
+const landingPages = ["lgtm", "desktop-karaoke"]
+
+export default function config(phase: string): NextConfig {
+  // `next dev` only serves public/ files at their exact path, so map
+  // /lgtm/ to /lgtm/index.html. The trailing slash matters: the landing pages
+  // use relative asset paths, which break at /lgtm. Rewrites aren't supported
+  // with static export; GitHub Pages resolves directory index.html (and
+  // redirects /lgtm -> /lgtm/) on its own.
+  if (phase === PHASE_DEVELOPMENT_SERVER) {
+    return {
+      images: { unoptimized: true },
+      trailingSlash: true,
+      async rewrites() {
+        return landingPages.map((name) => ({
+          source: `/${name}/`,
+          destination: `/${name}/index.html`,
+        }))
+      },
+    }
+  }
+
+  return {
+    output: "export",
+    images: { unoptimized: true },
+  }
 }
-
-export default nextConfig

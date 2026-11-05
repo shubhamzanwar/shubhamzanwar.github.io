@@ -1,13 +1,7 @@
 import Link from "next/link"
 
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-
-const placeholders = [1, 2, 3]
+import { ProjectCard } from "@/components/project-card"
+import { projects } from "@/lib/projects"
 
 export function Projects() {
   return (
@@ -22,16 +16,8 @@ export function Projects() {
         </Link>
       </div>
       <div className="grid grid-cols-3 gap-4">
-        {placeholders.map((n) => (
-          <Card
-            key={n}
-            className="bg-transparent transition-colors hover:bg-card"
-          >
-            <CardHeader>
-              <CardTitle>Project {n}</CardTitle>
-              <CardDescription>Project description goes here.</CardDescription>
-            </CardHeader>
-          </Card>
+        {projects.map((project) => (
+          <ProjectCard key={project.name} project={project} />
         ))}
       </div>
     </section>
