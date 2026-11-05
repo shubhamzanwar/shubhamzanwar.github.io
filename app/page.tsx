@@ -1,19 +1,15 @@
-import { Button } from "@/components/ui/button"
+import { Blog } from "@/components/home/blog"
+import { Intro } from "@/components/home/intro"
+import { Profile } from "@/components/home/profile"
+import { Projects } from "@/components/home/projects"
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
-    </div>
+    <main className="mx-auto flex w-full max-w-[800px] flex-col gap-16 px-[100px] pt-16 pb-32">
+      <Profile />
+      <Intro />
+      <Projects />
+      <Blog />
+    </main>
   )
 }
