@@ -1,0 +1,70 @@
+@reference "../globals.css";
+
+/*
+ * Styles for rendered blog markdown, using the shadcn/ui typography classes
+ * (https://ui.shadcn.com/docs/components/typography) mapped onto plain HTML.
+ */
+.markdown {
+  & h1 {
+    @apply mt-10 scroll-m-20 text-4xl font-extrabold tracking-tight text-balance;
+  }
+  & h2 {
+    @apply mt-10 scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0;
+  }
+  & h3 {
+    @apply mt-8 scroll-m-20 text-2xl font-semibold tracking-tight;
+  }
+  & h4 {
+    @apply mt-6 scroll-m-20 text-xl font-semibold tracking-tight;
+  }
+  & p {
+    @apply leading-7 not-first:mt-6;
+  }
+  & a {
+    @apply font-medium text-primary underline underline-offset-4;
+  }
+  & blockquote {
+    @apply mt-6 border-l-2 pl-6 italic;
+  }
+  & blockquote p {
+    @apply mt-0;
+  }
+  & ul {
+    @apply my-6 ml-6 list-disc [&>li]:mt-2;
+  }
+  & ol {
+    @apply my-6 ml-6 list-decimal [&>li]:mt-2;
+  }
+  & :not(pre) > code {
+    @apply relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
+  }
+  & table {
+    @apply my-6 w-full;
+  }
+  & tr {
+    @apply m-0 border-t p-0 even:bg-muted;
+  }
+  & th {
+    @apply border px-4 py-2 text-left font-bold;
+  }
+  & td {
+    @apply border px-4 py-2 text-left;
+  }
+  & img {
+    @apply mx-auto max-w-full rounded-lg;
+  }
+  & a img {
+    @apply inline rounded-none;
+  }
+
+  /* Code blocks, highlighted at build time by rehype-pretty-code (shiki). */
+  & pre {
+    @apply mt-6 overflow-x-auto rounded-lg bg-muted p-4 font-mono text-sm leading-6;
+  }
+  & pre code span {
+    color: var(--shiki-light);
+  }
+  :where(.dark) & pre code span {
+    color: var(--shiki-dark);
+  }
+}

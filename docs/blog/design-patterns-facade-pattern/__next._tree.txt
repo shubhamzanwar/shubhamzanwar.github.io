@@ -1,0 +1,9 @@
+:HL["/_next/static/chunks/23cvjtbnbl-iw.css","style"]
+:HL["/_next/static/media/07a39a8a4660cc7c-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/3jz2jo5tah4b9.css","style"]
+:HL["/img/design-pattern.jpg","image"]
+3:[["children",{"s":"__PAGE__","h":160}]]
+2:[["children",{"s":{"n":"slug","t":"d","k":"design-patterns-facade-pattern","s":[]},"h":65632,"c":"$Q3"}]]
+1:[["children",{"s":"blog","h":131168,"c":"$Q2"}]]
+0:{"b":"oAKGWtxZA3PeJixErHkAX","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}

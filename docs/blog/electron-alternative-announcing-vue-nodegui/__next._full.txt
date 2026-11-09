@@ -1,0 +1,143 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/07qetzhcpvb3h.js"
+3:"/_next/static/chunks/3tymb8fioncbq.js"
+4:"/_next/static/chunks/0eyqcfwp3zald.js"
+5:I[89554,["$2","$3","$4"],"ThemeProvider"]
+6:I[39756,["$2","$3","$4"],"default"]
+7:I[37457,["$2","$3","$4"],"default"]
+8:I[57933,["$2","$3","$4"],"Dock"]
+e:I[97367,["$2","$3","$4"],"OutletBoundary"]
+f:"$Sreact.suspense"
+11:"ViewportBoundary"
+12:I[97367,["$2","$3","$4"],"$11"]
+14:"MetadataBoundary"
+15:I[97367,["$2","$3","$4"],"$14"]
+17:I[68027,["$2","$3","$4"],"default",1]
+:HL["/_next/static/chunks/23cvjtbnbl-iw.css","style"]
+:HL["/_next/static/media/07a39a8a4660cc7c-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/c0680f1bdb3a2e90-s.p.1gsd1jahc5dg_.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/chunks/3jz2jo5tah4b9.css","style"]
+a:X
+c:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":["$Ld",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3jz2jo5tah4b9.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}],"p":false,"v":null}}]]
+b:[["children",{"s":{"n":"slug","t":"d","k":"electron-alternative-announcing-vue-nodegui","s":[]},"h":66048,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$a"},"c":"$Qc"}]]
+9:[["children",{"s":"blog","h":131584,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$a"},"c":"$Qb"}]]
+0:{"P":null,"c":["","blog","electron-alternative-announcing-vue-nodegui",""],"q":"","i":false,"t":{"t":{"s":"","h":131600,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/23cvjtbnbl-iw.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/07qetzhcpvb3h.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/3tymb8fioncbq.js","async":true,"nonce":"$undefined"}],["$","script","script-2",{"src":"/_next/static/chunks/0eyqcfwp3zald.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"className":"antialiased vc6T-a_variable font-sans pJDHIG_variable","children":["$","body",null,{"className":"pb-32","children":["$","$L5",null,{"children":[["$","$L6",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L7",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L8",null,{}]]}]}]}]]}],"p":false,"v":null},"c":"$Q9"},"h":{"r":["$","$1","h",{"children":[null,["$","$L12",null,{"children":"$L13"}],["$","$L15",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$f",null,{"name":"Next.Metadata","children":"$L16"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$17",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/23cvjtbnbl-iw.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"oAKGWtxZA3PeJixErHkAX"}
+a:C
+13:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+18:I[22016,["$2","$3","$4"],""]
+:HL["/img/announcing-vue-nodegui.jpg","image"]
+19:T4829,<p>In this blog post, we shall take a look at vue-nodegui, a newly-released JS library to create cross-platform native desktop applications using VueJS 💚</p>
+<ul>
+<li>repo link: <a href="https://github.com/nodegui/vue-nodegui" rel="nofollow noopener noreferrer" target="_blank">https://github.com/nodegui/vue-nodegui</a></li>
+<li>documentation site: <a href="https://vue.nodegui.org" rel="nofollow noopener noreferrer" target="_blank">https://vue.nodegui.org</a></li>
+</ul>
+<h3>Why not electron?</h3>
+<p>Before we dive into vue-nodegui, let us discuss the most popular alternative out there: Electron ⚛️</p>
+<p>Electron has been the most popular library for creating desktop applications using JS for a while now. While it is an amazing solution, it has some severe pain points by design:</p>
+<ul>
+<li>Electron apps tend to be bloated because every Electron app ships a version of the Chromium browser in which it runs. Hence, it's not <em>truly</em> native.</li>
+<li>Electron apps also suffer from excess CPU/memory utilization issues.</li>
+</ul>
+<h3>What's vue-nodegui? 💚</h3>
+<p>vue-nodegui is a custom vue3 renderer for <a href="https://github.com/nodegui/nodegui" rel="nofollow noopener noreferrer" target="_blank">nodegui</a>, a native JS bindings library for <a href="https://www.qt.io/" rel="nofollow noopener noreferrer" target="_blank">Qt5</a>. Below is an excerpt from the nodegui announcement last year:</p>
+<blockquote>
+<p>"<em>NodeGUI is powered by Qt5 💚 which makes it CPU and memory efficient as compared to other chromium based solutions like electron. NodeGui wants to incorporate everything that is good about Electron: The ease of development, freedom of styling, Native APIs, great documentation, etc. At the same time NodeGui aims to be memory and CPU efficient.</em>"</p>
+</blockquote>
+<p>vue-nodegui allows developers to use the familiar Vue API to create their native desktop app - something that react-native does for react. Since vue-nodegui is ultimately powered by Qt5, it means that vue-nodegui does not require a browser environment to render in. Instead, the widgets in the app are truly native.</p>
+<h3>Features 💎</h3>
+<ul>
+<li>Access to new Vue3 features (<code>setup</code>, <code>composition api</code>, etc)</li>
+<li>🧬 Cross platform. Should work on major Linux flavours, Windows and MacOS</li>
+<li>📉 Low CPU and memory footprint. Current CPU stays at 0% on idle and memory usage is under 20mb for a hello world program.</li>
+<li>💅 Styling with CSS (includes actual cascading). Also has full support for Flexbox layout (thanks to nodegui and Yoga).</li>
+<li>✅ Support for all node_modules (compatible with Node v12 and above)</li>
+<li>🎪 Native widget event listener support. supports all event available from Qt / NodeJs.</li>
+<li>💸 Can be used for Commercial applications.</li>
+<li>📚 Good documentation and website.</li>
+<li>🧙‍♂️ Good documentation for contributors.</li>
+<li>🦹🏻‍♀️ Good support for dark mode (Thanks to QT).</li>
+</ul>
+<h3>Requirements 📝</h3>
+<p>Below are the general requirements for systems to create vue-nodegui apps:</p>
+<ul>
+<li>Only supported on 64bit OS.</li>
+<li>CMake 3.1 and up (Installation instructions can be found here: <a href="https://cmake.org/install/" rel="nofollow noopener noreferrer" target="_blank">https://cmake.org/install/</a>)</li>
+<li>Make, GCC v7</li>
+<li>NodeJS v12.x and above</li>
+</ul>
+<p>You can find the detailed installation steps for each of the requirements and troubleshooting guide on the <a href="https://vue.nodegui.org/docs/guides/1-getting-started" rel="nofollow noopener noreferrer" target="_blank">Getting started</a> page.</p>
+<h3>Let's try it out 🤩</h3>
+<p>To get started, let's first clone the starter repo:</p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="shell" data-theme="github-light github-dark"><code data-language="shell" data-theme="github-light github-dark" style="display: grid;"><span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">git</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> clone</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> https://github.com/nodegui/vue-nodegui-starter</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> hello-world</span></span>
+<span data-line=""><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">cd</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> hello-world</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">npm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> install</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">npm</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> run</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> dev</span></span></code></pre></figure>
+<p>Let's create a basic hello-world project with a counter</p>
+<p><em>Clear out the contents of <code>App.vue</code> and write the below code in it</em></p>
+<figure data-rehype-pretty-code-figure=""><pre tabindex="0" data-language="html" data-theme="github-light github-dark"><code data-language="html" data-theme="github-light github-dark" style="display: grid;"><span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vn-view</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> :styleSheet</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"styles"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vn-text</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"header"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>Hello world&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vn-text</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vn-view</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"row"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vn-button</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> @clicked</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"decrement"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>-&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vn-button</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vn-text</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"count"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>{{count}}&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vn-text</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      &#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vn-button</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> @clicked</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">=</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">"increment"</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">>+&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vn-button</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vn-view</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  &#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">vn-view</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">template</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> { ref } </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">from</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> 'vue'</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">export</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> default</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span data-line=""><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0">  setup</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">() {</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> count</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> ref</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF">0</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">);</span></span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> increment</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      count.value </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">+=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    const</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0"> decrement</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> () </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">=></span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      count.value </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">-=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> 1</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">;</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    const</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF"> styles</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583"> =</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF"> `</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      #header {</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">        padding: 10px;</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">        background: #36495e;</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">        width: 200px;</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">        color: #fff;</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">        qproperty-alignment: AlignCenter;</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      }</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      #row {</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">        width: '100%';</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">        flex-direction: 'row';</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">        justify-content: 'center';</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      }</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      #count {</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">        padding: 5px;</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">        qproperty-alignment: AlignCenter;</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">      }</span></span>
+<span data-line=""><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF">    `</span></span>
+<span data-line=""> </span>
+<span data-line=""><span style="--shiki-light:#D73A49;--shiki-dark:#F97583">    return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8"> {</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      count,</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      decrement,</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      increment,</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">      styles</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">    }</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">  }</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">};</span></span>
+<span data-line=""><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">&#x3C;/</span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D">script</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8">></span></span></code></pre></figure>
+<p>After running <code>npm run dev</code> to fire up the app in your terminal, the output should look like the screenshot below</p>
+<img src="/img/vn-hello-world.gif" alt="sample-vue-nodegui-app" style="max-width: 100%; align-self: center">
+<p>As you can see, we have created a basic counter application by using the very familiar Vue API. 🚀🤘🏽</p>
+<p>However you may have notices new tags: <code>&#x3C;vn-view>, &#x3C;vn-button>, &#x3C;vn-text></code> These are what we call native-tags in vue-nodegui. To create any vue-nodegui application, you will have to use these. You can check out the entire catalog of widgets <a href="https://vue.nodegui.org/docs/api/interfaces/buttonprops" rel="nofollow noopener noreferrer" target="_blank">here</a></p>
+<h3>Contributions and Support ☃️</h3>
+<p>If you went through the <a href="https://github.com/nodegui/vue-nodegui" rel="nofollow noopener noreferrer" target="_blank">vue-nodegui repo</a>, you would have realized that even though it is an awesome project, it is still in it's infancy. Some more work on creating widgets and an ecosystem around it would be required before we can use it in production apps. This is where you all come in! 🚪</p>
+<p>We wholeheartedly welcome any kind of contributions for vue-nodegui - code, documentation, sister libraries (animation, testing, components) in the form of <a href="https://github.com/nodegui/.github/blob/master/CONTRIBUTING.md" rel="nofollow noopener noreferrer" target="_blank">pull-requests</a>. We have also opted into the <a href="https://hacktoberfest.digitalocean.com/" rel="nofollow noopener noreferrer" target="_blank">#Hacktoberfect</a> to encourage these contributions! 🥳</p>
+<p>If you liked the project, please show your support by starring the repo <a href="https://github.com/nodegui/vue-nodegui" rel="nofollow noopener noreferrer" target="_blank"><img src="https://img.shields.io/github/stars/nodegui/vue-nodegui?style=social" alt="GitHub Repo stars"></a></p>
+<p>If you are able to support financially 💵, kindly feel free to sponsor this project <a href="https://github.com/nodegui/vue-nodegui" target="_blank" rel="nofollow noopener noreferrer"><img src="/img/sponsor.png" height="25"></a></p>
+<p>Super excited to build something magnificent together! ❤️</p>
+<p>Cheers ☕️</p>d:["$","main",null,{"className":"mx-auto flex w-full max-w-[800px] flex-col gap-16 px-4 pt-16 sm:px-[100px]","children":["$","article",null,{"className":"flex flex-col gap-8","children":[["$","nav",null,{"aria-label":"breadcrumb","data-slot":"breadcrumb","className":"","children":["$","ol",null,{"data-slot":"breadcrumb-list","className":"flex flex-wrap items-center wrap-break-word text-muted-foreground gap-1 text-base leading-7","children":[["$","li",null,{"data-slot":"breadcrumb-item","className":"inline-flex items-center gap-1","children":["$","$L18",null,{"href":"/","data-slot":"breadcrumb-link","className":"transition-colors hover:text-foreground","children":"shubhamzanwar"}]}],["$","li",null,{"data-slot":"breadcrumb-separator","role":"presentation","aria-hidden":"true","className":"[&>svg]:size-3.5","children":"/"}],["$","li",null,{"data-slot":"breadcrumb-item","className":"inline-flex items-center gap-1","children":["$","span",null,{"data-slot":"breadcrumb-page","role":"link","aria-disabled":"true","aria-current":"page","className":"font-normal text-foreground","children":"blog"}]}]]}]}],["$","header",null,{"className":"flex flex-col gap-2","children":[["$","h1",null,{"className":"scroll-m-20 text-4xl font-extrabold tracking-tight text-balance","children":"Electron alternative: Announcing vue-nodegui 🚀💚"}],["$","p",null,{"className":"text-xl text-muted-foreground","children":"Taking a look at the new released vue-nodegui library. A cross platform, native desktop application builder powered by vue and nodegui"}],["$","time",null,{"dateTime":"2020-10-03","className":"text-sm text-muted-foreground","children":"03 Oct 2020"}]]}],["$","figure",null,{"className":"flex flex-col gap-2","children":[["$","img",null,{"src":"/img/announcing-vue-nodegui.jpg","alt":"","className":"w-full rounded-lg"}],["$","figcaption",null,{"className":"text-sm text-muted-foreground [&_a]:underline [&_a]:underline-offset-4","dangerouslySetInnerHTML":{"__html":"Photo by <a href=\"https://unsplash.com/@dietteh06?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText\">DiEtte Henderson</a> on <a href=\"https://unsplash.com/s/photos/present?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText\">Unsplash</a>"}}]]}],["$","div",null,{"className":"markdown","dangerouslySetInnerHTML":{"__html":"$19"}}]]}]}]
+1a:I[27201,["$2","$3","$4"],"IconMark"]
+10:null
+16:[["$","title","0",{"children":"Electron alternative: Announcing vue-nodegui 🚀💚"}],["$","meta","1",{"name":"description","content":"Taking a look at the new released vue-nodegui library. A cross platform, native desktop application builder powered by vue and nodegui"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L1a","3",{}]]

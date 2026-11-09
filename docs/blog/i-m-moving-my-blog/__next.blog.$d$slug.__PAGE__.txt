@@ -1,0 +1,39 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/07qetzhcpvb3h.js"
+3:"/_next/static/chunks/3tymb8fioncbq.js"
+4:"/_next/static/chunks/0eyqcfwp3zald.js"
+5:I[89554,["$2","$3","$4"],"ThemeProvider"]
+6:I[39756,["$2","$3","$4"],"default"]
+7:I[37457,["$2","$3","$4"],"default"]
+8:I[57933,["$2","$3","$4"],"Dock"]
+11:I[22016,["$2","$3","$4"],""]
+16:"ViewportBoundary"
+17:I[97367,["$2","$3","$4"],"$16"]
+18:"MetadataBoundary"
+19:I[97367,["$2","$3","$4"],"$18"]
+1a:"$Sreact.suspense"
+1b:I[27201,["$2","$3","$4"],"IconMark"]
+:HL["/_next/static/chunks/23cvjtbnbl-iw.css","style"]
+:HL["/img/moving-blog.jpg","image"]
+a:X
+d:X
+d:C
+10:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","main",null,{"className":"mx-auto flex w-full max-w-[800px] flex-col gap-16 px-4 pt-16 sm:px-[100px]","children":["$","article",null,{"className":"flex flex-col gap-8","children":[["$","nav",null,{"aria-label":"breadcrumb","data-slot":"breadcrumb","className":"","children":["$","ol",null,{"data-slot":"breadcrumb-list","className":"flex flex-wrap items-center wrap-break-word text-muted-foreground gap-1 text-base leading-7","children":[["$","li",null,{"data-slot":"breadcrumb-item","className":"inline-flex items-center gap-1","children":["$","$L11",null,{"href":"/","data-slot":"breadcrumb-link","className":"transition-colors hover:text-foreground","children":"shubhamzanwar"}]}],["$","li",null,{"data-slot":"breadcrumb-separator","role":"presentation","aria-hidden":"true","className":"[&>svg]:size-3.5","children":"/"}],["$","li",null,{"data-slot":"breadcrumb-item","className":"inline-flex items-center gap-1","children":["$","span",null,{"data-slot":"breadcrumb-page","role":"link","aria-disabled":"true","aria-current":"page","className":"font-normal text-foreground","children":"blog"}]}]]}]}],["$","header",null,{"className":"flex flex-col gap-2","children":[["$","h1",null,{"className":"scroll-m-20 text-4xl font-extrabold tracking-tight text-balance","children":"I'm moving my blog"}],["$","p",null,{"className":"text-xl text-muted-foreground","children":"In the process of shifting my blog to my personal website"}],["$","time",null,{"dateTime":"2020-09-29","className":"text-sm text-muted-foreground","children":"29 Sep 2020"}]]}],["$","figure",null,{"className":"flex flex-col gap-2","children":[["$","img",null,{"src":"/img/moving-blog.jpg","alt":"","className":"w-full rounded-lg"}],["$","figcaption",null,{"className":"text-sm text-muted-foreground [&_a]:underline [&_a]:underline-offset-4","dangerouslySetInnerHTML":{"__html":"Photo by <a href=\"https://unsplash.com/@thoughtcatalog?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText\">Thought Catalog</a> on <a href=\"https://unsplash.com/s/photos/blog?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText\">Unsplash</a>"}}]]}],"$L12"]}]}],["$L13"],"$L14"]}],"p":"$@15","v":null,"s":"$a"}}]]
+e:[["children",{"s":{"n":"slug","t":"d","k":"i-m-moving-my-blog","s":[]},"h":65632,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","template":["$","$L7",null,{}]}]]}],"p":"$@f","v":"$d","s":"$a"},"c":"$Q10"}]]
+b:[["children",{"s":"blog","h":131168,"d":{"r":["$","$1","c",{"children":[null,["$","$L6",null,{"parallelRouterKey":"children","template":["$","$L7",null,{}]}]]}],"p":"$@c","v":"$d","s":"$a"},"c":"$Qe"}]]
+0:{"t":{"t":{"s":"","h":131152,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/23cvjtbnbl-iw.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/07qetzhcpvb3h.js","async":true}],["$","script","script-1",{"src":"/_next/static/chunks/3tymb8fioncbq.js","async":true}],["$","script","script-2",{"src":"/_next/static/chunks/0eyqcfwp3zald.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"className":"antialiased vc6T-a_variable font-sans pJDHIG_variable","children":["$","body",null,{"className":"pb-32","children":["$","$L5",null,{"children":[["$","$L6",null,{"parallelRouterKey":"children","template":["$","$L7",null,{}],"notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]]}],["$","$L8",null,{}]]}]}]}]]}],"p":"$@9","v":null,"s":"$a"},"c":"$Qb"},"h":{"r":["$","$1","h",{"children":[null,["$","$L17",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L19",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1a",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"I'm moving my blog"}],["$","meta","1",{"name":"description","content":"In the process of shifting my blog to my personal website"}],["$","link","2",{"rel":"icon","href":"/favicon.ico?favicon.2vob68tjqpejf.ico","sizes":"256x256","type":"image/x-icon"}],["$","$L1b","3",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@1c","v":null,"s":"$a"}},"a":"$@1d","u":"$@1e","b":"oAKGWtxZA3PeJixErHkAX"}
+1f:I[97367,["$2","$3","$4"],"OutletBoundary"]
+:HL["/_next/static/chunks/3jz2jo5tah4b9.css","style"]
+12:["$","div",null,{"className":"markdown","dangerouslySetInnerHTML":{"__html":"<p>I've been writing on <a href=\"https://medium.com/@zanwar.shubham\" rel=\"nofollow noopener noreferrer\" target=\"_blank\">medium</a> and dev.to for a while now. While they're great websites, I want to maintain the things I write, my projects and just any general information about me in a single place.</p>\n<p>Of course, I will continue to contribute to more posts on the external websites - but the focus will now be shifted to creating good content on this website.</p>\n<p>Hope you all stick around. Fun times ahead 🚀</p>"}}]
+13:["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3jz2jo5tah4b9.css","precedence":"next"}]
+14:["$","$L1f",null,{"children":["$","$1a",null,{"name":"Next.MetadataOutlet","children":"$@20"}]}]
+a:300
+20:null
+1e:true
+a:C
+1d:0
+f:"$undefined"
+c:"$undefined"
+9:"$undefined"
+1c:"$undefined"
+15:"$undefined"

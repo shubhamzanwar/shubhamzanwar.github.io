@@ -3,12 +3,7 @@
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { useRef, useState, type MouseEvent } from "react"
-import {
-  FolderOpenIcon,
-  Home01Icon,
-  Mail01Icon,
-  UserIcon,
-} from "@hugeicons/core-free-icons"
+import { Home01Icon, ThoughtBubbleIcon, UserIcon } from "@hugeicons/core-free-icons"
 import { HugeiconsIcon, type IconSvgElement } from "@hugeicons/react"
 
 import { buttonVariants } from "@/components/ui/button"
@@ -23,8 +18,7 @@ import { cn } from "@/lib/utils"
 const items: { label: string; href: string; icon: IconSvgElement }[] = [
   { label: "Home", href: "/", icon: Home01Icon },
   { label: "About", href: "/about", icon: UserIcon },
-  { label: "Projects", href: "/projects", icon: FolderOpenIcon },
-  { label: "Contact", href: "/contact", icon: Mail01Icon },
+  { label: "Blog", href: "/blog", icon: ThoughtBubbleIcon },
 ]
 
 // Tile size at rest, tile size directly under the cursor, and how far (px)
