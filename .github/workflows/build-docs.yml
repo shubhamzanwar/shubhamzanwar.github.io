@@ -1,0 +1,46 @@
+name: Build site
+
+# Rebuild the static export in docs/ (served by GitHub Pages) on every push to
+# main, then commit it back. Pushes that only touch docs/ — including the
+# commit this workflow makes — don't trigger it again.
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "docs/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Don't let two builds race to push to main; the newest push wins.
+concurrency:
+  group: build-docs
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Commit docs/
+        run: |
+          git add docs
+          if git diff --cached --quiet; then
+            echo "docs/ is unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: build site from ${GITHUB_SHA::7}"
+          git push
