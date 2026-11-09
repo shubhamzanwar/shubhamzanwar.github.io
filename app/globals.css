@@ -2,9 +2,6 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-/* Built site (GitHub Pages output) — don't scan it for class names. */
-@source not "../docs";
-
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
